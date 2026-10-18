@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from imblearn.over_sampling import SMOTE
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, precision_recall_curve, confusion_matrix, recall_score, precision_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, precision_recall_curve, confusion_matrix, recall_score, precision_score, f1_score
 
 data = load_breast_cancer()
 
