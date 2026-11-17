@@ -202,7 +202,8 @@ for rounds in range(N_QUERIES):
     history['precision'].append(precision_score(y_test, pred, pos_label=0))
     history['recall'].append(recall_score(y_test, pred, pos_label=0))
     history['f1 score'].append(f1_score(y_test, pred, pos_label=0))
-    history['report'].append(classification_report(y_test, pred))
+    report = classification_report(y_test, pred, target_names=data.target_names)
+    history['report'].append(report)
 
     if len(X_pool) == 0:
         print("\nThe Pool is exhausted")
@@ -225,7 +226,7 @@ for rounds in range(N_QUERIES):
           f"Malignant recall = {history['recall'][-1]:.3f}, ",
           f"Malignant f1 score = {history['f1 score'][-1]:.3f}, ",
           f"Malignant accuracy = {history['accuracy'][-1]:.3f}",
-          f"\n----Classification report----\n {history['report']}")
+           f"\n----Classification report----\n{report}")
 
 plt.figure(figsize=(12, 12))
 plt.plot(history['train_size'],history['accuracy'], marker = '*', label = "Accuracy")
