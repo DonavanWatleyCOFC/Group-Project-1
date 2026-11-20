@@ -1,0 +1,14 @@
+Our engineering team defends K=5 as the optimal cluster count because it delivers 
+the highest mathematical separation (global peak Silhouette Score of 0.555) 
+while translating directly into five actionable, non-overlapping marketing playbooks 
+that optimize campaign spend without operational bloat. A 5-cluster model maps 
+cleanly to distinct consumer behavioral archetypes, such as High-Income/High-Spenders 
+(luxury VIP retention), High-Income/Low-Spenders (premium incentive targeting), 
+Low-Income/High-Spenders (trend-driven impulse promotions and financing), 
+Low-Income/Low-Spenders (value-oriented discount messaging), and Moderate-Income/
+Moderate-Spenders (steady seasonal retail campaigns). Expanding to K=6 mathematically 
+forces an artificial division of the middle-tier customer base into two parts, which 
+inflates creative production costs and team overhead without generating statistically 
+significant lifts in customer acquisition or conversion rates; therefore, K=5 
+represents the pragmatic sweet spot between statistical rigor and maximum 
+marketing ROI.
